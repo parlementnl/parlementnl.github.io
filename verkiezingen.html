@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristanvrs</title>
+        <!-- Leuke bootstrap dingen -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <!-- Font -->
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <?php include("config/db_config.php");?>
+    </head>
+<body>
+
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <i class="fa fa-bars"></i>                   
+      </button>
+      <a class="navbar-brand" href="index.php">parlement<b>nl</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="tk.php">Tweede Kamer</a></li>
+      <li><a href="ek.php">Eerste Kamer</a></li>
+      <li><a href="verkiezingen.php"><b>Verkiezingen</b></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+      <li class="active"><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Inloggen</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+  
+<div class="container">
+
+  <h2>Tweede Kamer verkiezingen 2021</h2>
+  <p>Bekijk de huidige zetelverdeling van de Tweede Kamer en hoe de zetelverdeling eruit ziet volgens de laatste peilingen.</p>
+  <br><div class="parlement">
+  <div class="flourish-embed flourish-parliament" data-src="visualisation/5561677" data-width="500px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+</div>
+
+<div class="container">
+    <div class="text-over">
+  <h2>Deze partijen doen mee aan de verkiezingen van 2021</h2>
+    </div><br><br><br>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Partij</th>
+        <th>Lijsttrekker</th>
+        <th>Lijst</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Volkspartij voor Vrijheid en Democratie (VVD) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/VVD_logo_%282020–present%29.svg/304px-VVD_logo_%282020–present%29.svg.png" alt="VVD" style="height: 2rem;"></td>
+        <td>Mark Rutte</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Partij voor de Vrijheid (PVV) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/PVV_logo_%282006–present%29.svg/532px-PVV_logo_%282006–present%29.svg.png" alt="PVV" style="height: 2rem;"></td>
+        <td>Geert Wilders</td>
+        <td>2</td>
+      </tr>
+      <tr>
+      <td>Christen-Democratisch Appèl (CDA) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/CDA_logo_2021.svg/300px-CDA_logo_2021.svg.png" alt="CDA" style="height: 2rem;"></td>
+        <td>Wopke Hoekstra</td>
+        <td>3</td>
+      </tr>
+      <tr>
+      <td>Democraten 66 (D66) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/D66_logo_%282019–present%29.png/400px-D66_logo_%282019–present%29.png" alt="D66" style="height: 2rem;"></td>
+        <td>Sigrid Kaag</td>
+        <td>4</td>
+      </tr>
+      <tr>
+      <td>GroenLinks <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/GroenLinks_logo_%28variant%29.png/400px-GroenLinks_logo_%28variant%29.png" alt="GL" style="height: 2rem;"></td>
+        <td>Jesse Klaver</td>
+        <td>5</td>
+      </tr>
+      <tr>
+      <td>Socialistische Partij (SP) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Socialistische_Partij_%28nl_2006%29_Logo.svg/400px-Socialistische_Partij_%28nl_2006%29_Logo.svg.png" alt="SP" style="height: 2rem;"></td>
+        <td>Lilian Marijnissen</td>
+        <td>6</td>
+      </tr>
+      <tr>
+      <td>Partij van de Arbeid (PvdA) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/PvdA_logo_%282018–present%29.svg/400px-PvdA_logo_%282018–present%29.svg.png" alt="PVDA" style="height: 2rem;"></td>
+        <td>Lilianne Ploumen</td>
+        <td>7</td>
+      </tr>
+      <tr>
+      <td>ChristenUnie <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/ChristenUnie_logo.svg/400px-ChristenUnie_logo.svg.png" alt="CU" style="height: 2rem;"></td>
+        <td>Gert-Jan Segers</td>
+        <td>8</td>
+      </tr>
+      <tr>
+      <td>Partij voor de Dieren (PvdD) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Party_for_the_Animals_logo.svg/400px-Party_for_the_Animals_logo.svg.png" alt="PVDD" style="height: 2rem;"></td>
+        <td>Esther Ouwehand</td>
+        <td>9</td>
+      </tr>
+      <tr>
+      <td>50PLUS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/50PLUS_%28nl%29_Logo.svg/343px-50PLUS_%28nl%29_Logo.svg.png" alt="50+" style="height: 2rem;"></td>
+        <td>Liane den Haan</td>
+        <td>10</td>
+      </tr>
+      <tr>
+      <td>Staatkundig Gereformeerde Partij (SGP) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/SGP_logo_%282016–present%29.svg/400px-SGP_logo_%282016–present%29.svg.png" alt="SGP" style="height: 2rem;"></td>
+        <td>Kees van der Staaij</td>
+        <td>11</td>
+      </tr>
+      <tr>
+      <td>DENK <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/DENK_logo_%282020–present%29.svg/400px-DENK_logo_%282020–present%29.svg.png" alt="DENK" style="height: 2rem;"></td>
+        <td>Farid Azarkan</td>
+        <td>12</td>
+      </tr>
+      <tr>
+      <td>Forum voor Democratie (FVD) <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/FvD_Logo.png" alt="FVD" style="height: 2rem;"></td>
+        <td>Thierry Baudet</td>
+        <td>13</td>
+      </tr>
+      <tr>
+      <td>BIJ1 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/BIJ1.png/400px-BIJ1.png" alt="BIJ1" style="height: 2rem;"></td>
+        <td>Sylvana Simons</td>
+        <td>14</td>
+      </tr>
+      <tr>
+      <td>Juiste Antwoord (JA21) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/JA21_logo.svg/300px-JA21_logo.svg.png" alt="JA21" style="height: 2rem;"></td>
+        <td>Joost Eerdmans</td>
+        <td>15</td>
+      </tr>
+      <tr>
+      <td>Code Oranje <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Code_Oranje_logo.svg/400px-Code_Oranje_logo.svg.png" alt="CodeOranje" style="height: 2rem;"></td>
+        <td>Richard de Mos</td>
+        <td>16</td>
+      </tr>
+      <tr>
+      <td>Volt Nederland (Volt) <img src="https://assets.volteuropa.org/inline-images/oajpCzRWdUbmNQwfrU8PvASbry46NDyyoi8mudGlHLzvkVrYkh.png" alt="Volt" style="height: 2rem;"></td>
+        <td>Laurens Dassen</td>
+        <td>17</td>
+      </tr>
+      <tr>
+      <td>Nida <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/NIDA_logo_-_algemeen.png" alt="NIDA" style="height: 2rem;"></td>
+        <td>Nourdin El Ouali</td>
+        <td>18</td>
+      </tr>
+      <tr>
+      <td>Piratenpartij (PPNL) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Piratpartiet.svg/300px-Piratpartiet.svg.png" alt="PP" style="height: 2rem;"></td>
+        <td>Matthijs Pontier</td>
+        <td>19</td>
+      </tr>
+      <tr>
+      <td>Libertaire Partij (LP) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Libertarischepartij.svg/400px-Libertarischepartij.svg.png" alt="LP" style="height: 2rem;"></td>
+        <td>Robert Valentine</td>
+        <td>20</td>
+      </tr>
+      <tr>
+      <td>JONG <img src="data:image/png;base64,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" alt="JONG" style="height: 2rem;"></td>
+        <td>Jaron Tichelaar</td>
+        <td>21</td>
+      </tr>
+      <tr>
+      <td>Splinter <img src="https://static1.squarespace.com/static/5fbfb98e2e34347c703d20ad/t/5fbff36bf3de5e49b56d6497/1615574325566/" alt="Splinter" style="height: 2rem;"></td>
+        <td>Femke Merel van Kooten-Arissen</td>
+        <td>22</td>
+      </tr>
+      <tr>
+      <td>Boer Burger Beweging (BBB) <img src="https://boerburgerbeweging.nl/wp-content/uploads/2020/01/BBB_Logo_2020.png" alt="BBB" style="height: 2rem;"></td>
+        <td>Caroline van der Plas</td>
+        <td>23</td>
+      </tr>
+      <tr>
+      <td>NLBeter <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/NLBeter_logo.png/300px-NLBeter_logo.png" alt="NLB" style="height: 2rem;"></td>
+        <td>Esther van Fenema</td>
+        <td>24</td>
+      </tr>
+      <tr>
+      <td>Lijst Henk Krol <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Lijst_Henk_Krol_logo.svg/400px-Lijst_Henk_Krol_logo.svg.png" alt="LHK" style="height: 2rem;"></td>
+        <td>Henk Krol</td>
+        <td>25</td>
+      </tr>
+      <tr>
+      <td>OPRECHT <img src="https://maluku4maluku.com/wp-content/uploads/2021/01/LogoOprecht21.jpg" alt="OPRECHT" style="height: 2rem;"></td>
+        <td>Michael Ruperti</td>
+        <td>26</td>
+      </tr>
+      <tr>
+      <td>Jezus Leeft <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jezus_Leeft_logo.svg/400px-Jezus_Leeft_logo.svg.png" alt="JezusLeeft" style="height: 2rem;"></td>
+        <td>Florens van der Spek (Jezus himself)</td>
+        <td>27</td>
+      </tr>
+      <tr>
+      <td>Trots op Nederland (TON) <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/TROTS.svg/240px-TROTS.svg.png" alt="TON" style="height: 2rem;"></td>
+        <td>Pieter Alberda</td>
+        <td>28</td>
+      </tr>
+      <tr>
+      <td>U-Buntu Connected Front <img src="data:image/png;base64,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" alt="U-Buntu" style="height: 2rem;"></td>
+        <td>Regillio Vaarnold</td>
+        <td>29</td>
+      </tr>
+      <tr>
+      <td> <img src="https://lijst30.nl/wp-content/uploads/2021/03/logo-lijst30-groen-2.png" alt="Lijst30" style="height: 2rem;"></td>
+        <td>Anna Zeven</td>
+        <td>30</td>
+      </tr>
+      <tr>
+      <td>Partij van de Eenheid <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Partij_van_de_Eenheid_logo_2014.svg/300px-Partij_van_de_Eenheid_logo_2014.svg.png" alt="PvdE" style="height: 2rem;"></td>
+        <td>Arnoud van Doorn</td>
+        <td>31</td>
+      </tr>
+      <tr>
+      <td>De Feestpartij (DFP) <img src="https://www.defeestpartij.nl/wp-content/uploads/2021/01/logodfp-e1609789877395.png" alt="DFP" style="height: 2rem;"></td>
+        <td>Johan Vlemmix</td>
+        <td>32</td>
+      </tr>
+      <tr>
+      <td>Vrij en Sociaal Nederland <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vrij_en_Sociaal_Nederland_logo.svg/355px-Vrij_en_Sociaal_Nederland_logo.svg.png" alt="VSN" style="height: 2rem;"></td>
+        <td>Bas Filippini</td>
+        <td>33</td>
+      </tr>
+      <tr>
+      <td>Wij zijn Nederland</td>
+        <td>Erwin Versteeg</td>
+        <td>34</td>
+      </tr>
+      <tr>
+      <td>Modern Nederland <img src="https://modern-nederland.nl/wp-content/uploads/2020/10/modern-nederland.png" alt="MNL" style="height: 2rem;"></td>
+        <td>Niels Heeze</td>
+        <td>35</td>
+      </tr>
+      <tr>
+      <td>De Groenen <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/De_Groenen_logo.svg/400px-De_Groenen_logo.svg.png" alt="Groenen" style="height: 2rem;"></td>
+        <td>Otto ter Haar</td>
+        <td>36</td>
+      </tr>
+      <tr>
+      <td>Partij voor de Republiek <img src="https://republiek.eu/wp-content/uploads/2020/03/Logo-Partij-voor-de-Republiek-.png" alt="PvdR" style="height: 2rem;"></td>
+        <td>Bruno Braakhuis</td>
+        <td>37</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("mar 17, 2021 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " Dagen " + hours + " Uur "
+  + minutes + " Minuten " + seconds + " Seconden ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
