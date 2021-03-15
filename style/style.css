@@ -70,7 +70,24 @@ input[type=password], textarea {
     width: 90%;
 }
 
-/* Account */
+.buttontk {
+    margin-top: 20px;
+    background-color: rgba(255, 82, 82, 1);
+    color: white;
+    font-size: 16px;
+    padding: 10px 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    }
+
+.buttontk:hover {
+    background-color: #E7E7E7;
+    color: rgba(255, 82, 82, 1);
+    }
+
+/* Live */
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
@@ -79,8 +96,8 @@ input[type=password], textarea {
     display:inline-block;
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	margin-right: 15px;
-    margin-bottom: 0px;
+	margin-right: 10px;
+    margin-bottom: 0,5px;
 	height: 20px;
 	width: 20px;
 	transform: scale(1);
@@ -107,5 +124,30 @@ input[type=password], textarea {
 	100% {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+	}
+}
+
+.blob.white {
+	background: rgb(240, 240, 240);
+	box-shadow: 0 0 0 0 rgb(240, 240, 240);
+	animation: pulse-white 2s infinite;
+    margin-bottom: -5px;
+    margin-left: -5px;
+}
+
+@keyframes pulse-white {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 	}
 }
